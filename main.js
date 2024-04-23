@@ -3,6 +3,9 @@ import javascriptLogo from './javascript.svg';
 import viteLogo from '/vite.svg';
 import { setupCounter } from './counter.js';
 
+import { Fancybox } from "@fancyapps/ui";
+import "@fancyapps/ui/dist/fancybox/fancybox.css";
+
 document.querySelector('#app').innerHTML = `
   <div>
     <a href="https://vitejs.dev" target="_blank">
@@ -22,3 +25,7 @@ document.querySelector('#app').innerHTML = `
 `;
 
 setupCounter(document.querySelector('#counter'));
+
+Fancybox.bind("[data-fancybox]", {
+  // Your custom options
+});

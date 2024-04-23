@@ -1,6 +1,9 @@
 import { defineConfig } from 'vite';
+import Inspect from 'vite-plugin-inspect';
 
-// vite.config.js
+
 export default {
-    // config options
-  }
+  plugins: [
+    Inspect()
+  ],
+}
